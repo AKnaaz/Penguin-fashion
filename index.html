@@ -6,40 +6,51 @@
     <title>Penguin Fashion</title>
     <link rel="shortcut icon" href="./icons/penguin.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- bebas neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-[roboto]">
     <header class="w-full pt-10 px-20 pb-24">
         <!-- nav section -->
-         <nav class="flex justify-between items-center">
+         <nav class="sm:flex justify-between items-center">
 
             <img src="./icons/logo.png" alt="" class="w-48 h-12">
 
             <div class="nav-links">
+                <!-- <i class="fa-solid fa-bars" class="sm:visible"></i> -->
                 <ul class="flex">
-                    <li class="mr-5 font-medium text-base font-[roboto] text-[#3C3C3C]"><a href="" class="">Home</a></li>
-                    <li class="mr-5 font-medium text-base font-[roboto] text-[#3C3C3C]"><a href="">Product</a></li>
-                    <li class="mr-5 font-medium text-base font-[roboto] text-[#3C3C3C]"><a href="">About us</a></li>
-                    <li class="mr-5 font-medium text-base font-[roboto] text-[#3C3C3C]"><a href="">Contact us</a></li>
+                    <li class="mr-5 font-medium text-base text-[#3C3C3C]"><a href="" class="">Home</a></li>
+                    <li class="mr-5 font-medium text-base text-[#3C3C3C]"><a href="">Product</a></li>
+                    <li class="mr-5 font-medium text-base text-[#3C3C3C]"><a href="">About us</a></li>
+                    <li class="mr-5 font-medium text-base text-[#3C3C3C]"><a href="">Contact us</a></li>
                 </ul>
             </div>
          </nav>
 
          <!-- banner section -->
-          <div class="banner-container">
+          <div class="banner-container flex justify-between items-center mt-10">
+
             <div class="banner-box">
-                <h1 class="banner-title">Be the Penguins of Winter</h1>
-                <p class="banner-content">Lorem Ipsum is simply dummy text of the printing  and typesetting industry.</p>
-                <button class="btn-primary">BUY NOW</button>
+                <h1 class="banner-title font-[bebas neue] text-7xl font-normal leading-[1.2]"> <span class="text-[#FABE4C]">Be the Penguins</span> <br> <span class="text-[#363958] ">of Winter</span></h1>
+
+                <p class="banner-content text-base font-normal leading-[1.7] text-[#3E3E3E] my-2">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+
+                <button class="btn-primary bg-gradient-to-b from-[#A4BC46FF] to-[#85A019FF] rounded-lg pl-8 pr-8 pt-4 pb-4 text-base font-medium font-[roboto] text-[#FFFFFF]"><i class="fa-solid fa-cart-shopping" class="w-4"></i> BUY NOW</button>
             </div>
 
             <div class="banner-img">
-                <img src="./images/model.png" alt="">
+                <img src="./images/model.png" alt="" class="w-3/4">
             </div>
           </div>
     </header>
     
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/cffcbee330.js" crossorigin="anonymous"></script>
 </body>
 </html>
